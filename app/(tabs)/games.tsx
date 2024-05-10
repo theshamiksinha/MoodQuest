@@ -1,12 +1,28 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 
-const games = () => {
+import DailyChallengesMap from '@/components/DailyChallengesMap';
+
+const Games = () => {
   return (
-    <View>
-      <Text>games</Text>
-    </View>
-  )
-}
+    <ImageBackground source={require('@/components/background_image.jpg')} style={styles.backgroundImage}>
+      <View style={styles.container}>
+        <DailyChallengesMap />
+      </View>
+    </ImageBackground>
+  );
+};
 
-export default games
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  backgroundImage: {
+    flex: 1,
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default Games;
