@@ -10,7 +10,7 @@ const GenerativeChat: React.FC = () => {
   const sendMessageToBackend = async () => {
     try {
       setIsSending(true); // Set sending state to true
-      const response = await fetch('http://192.168.43.6:3000/message', {
+      const response = await fetch('http://192.168.1.36:3000/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

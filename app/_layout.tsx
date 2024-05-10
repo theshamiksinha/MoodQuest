@@ -3,6 +3,7 @@ import { useEffect} from 'react'
 import {  SplashScreen,Slot, Stack} from 'expo-router'
 import {useFonts} from 'expo-font'
 import GlobalProvider from "../context/GlobalProvider";
+import 'react-native-reanimated'
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {

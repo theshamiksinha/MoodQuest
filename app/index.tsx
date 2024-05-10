@@ -41,7 +41,7 @@ const CustomButton = ({
 };
 
 export default function App(){
-  const {isLoading,isLoggedIn } = useGlobalContext
+  const {isLoading,isLoggedIn } = useGlobalContext();
   if(!isLoading && isLoggedIn){
     return <Redirect href = "/home" />
   }

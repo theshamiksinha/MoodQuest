@@ -67,12 +67,12 @@ app.use(express.json());
 
 
 app.use(cors({
-origin: ['http://192.168.43.6:3000/', 
-    'http://192.168.43.6:3000/data']
+origin: ['http://192.168.1.36:3000/', 
+    'http://192.168.1.36:3000/data']
 }));
 
 app.get('/data', (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://192.168.43.6:3000');
+  res.header('Access-Control-Allow-Origin', 'http://192.168.1.36:3000');
   res.header(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
