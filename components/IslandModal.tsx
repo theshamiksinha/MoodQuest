@@ -1,36 +1,48 @@
-// IslandModal.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Modal, View, Text, StyleSheet, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
+import Page1Modal from './Page1Modal';
+import Page2Modal from './Page2Modal';
+import Page3Modal from './Page3Modal';
+import Page4Modal from './Page4Modal';
 
 interface Props {
   visible: boolean;
   selectedIsland: number | null;
   closeModal: () => void;
-  navigateToPage: (page: string) => void;
 }
 
-const IslandModal: React.FC<Props> = ({ visible, selectedIsland, closeModal, navigateToPage }) => {
+const IslandModal: React.FC<Props> = ({ visible, selectedIsland, closeModal }) => {
+  const [page1Visible, setPage1Visible] = useState(false);
+  const [page2Visible, setPage2Visible] = useState(false);
+  const [page3Visible, setPage3Visible] = useState(false);
+  const [page4Visible, setPage4Visible] = useState(false);
+
+  const openPage1Modal = () => setPage1Visible(true);
+  const openPage2Modal = () => setPage2Visible(true);
+  const openPage3Modal = () => setPage3Visible(true);
+  const openPage4Modal = () => setPage4Visible(true);
+
   return (
     <Modal visible={visible} transparent={true} onRequestClose={closeModal}>
       <TouchableWithoutFeedback onPress={closeModal}>
         <View style={styles.modalBackground}>
-          <TouchableWithoutFeedback>
+          <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.modalContainer}>
               <TouchableOpacity onPress={closeModal} style={styles.closeButton}>
                 <Text style={styles.closeButtonText}>✕</Text>
               </TouchableOpacity>
               <Text style={styles.modalTitle}>Choose skill to work upon</Text>
               <View style={styles.subMenuContainer}>
-                <TouchableOpacity onPress={() => navigateToPage('Page1')} style={styles.subMenuItem}>
+                <TouchableOpacity onPress={openPage1Modal} style={styles.subMenuItem}>
                   <Text style={styles.subMenuText}>Page 1</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigateToPage('Page2')} style={styles.subMenuItem}>
+                <TouchableOpacity onPress={openPage2Modal} style={styles.subMenuItem}>
                   <Text style={styles.subMenuText}>Page 2</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigateToPage('Page3')} style={styles.subMenuItem}>
+                <TouchableOpacity onPress={openPage3Modal} style={styles.subMenuItem}>
                   <Text style={styles.subMenuText}>Page 3</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigateToPage('Page4')} style={styles.subMenuItem}>
+                <TouchableOpacity onPress={openPage4Modal} style={styles.subMenuItem}>
                   <Text style={styles.subMenuText}>Page 4</Text>
                 </TouchableOpacity>
               </View>
@@ -38,6 +50,10 @@ const IslandModal: React.FC<Props> = ({ visible, selectedIsland, closeModal, nav
           </TouchableWithoutFeedback>
         </View>
       </TouchableWithoutFeedback>
+      {page1Visible && <Page1Modal visible={true} closeModal={() => setPage1Visible(false)} />}
+      {page2Visible && <Page2Modal visible={true} closeModal={() => setPage2Visible(false)} />}
+      {page3Visible && <Page3Modal visible={true} closeModal={() => setPage3Visible(false)} />}
+      {page4Visible && <Page4Modal visible={true} closeModal={() => setPage4Visible(false)} />}
     </Modal>
   );
 };
