@@ -86,11 +86,10 @@ const FormField = ({
   );
 };
 
-const SignUp = () => {
+const SignIn = () => {
 //   const { setUser, setIsLogged } = useGlobalContext();
   const [isSubmitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
-    username: "",
     email: "",
     password: "",
   });
@@ -133,16 +132,8 @@ const SignUp = () => {
           />
 
           <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
-            Sign up to MoodQuest
+            Log in to MoodQuest
           </Text>
-
-          <FormField
-            title="Username"
-            value={form.username}
-            handleChangeText={(e) => setForm({ ...form, username: e })}
-            otherStyles="mt-10"
-            // keyboardType="email-address"
-          />
 
           <FormField
             title="Email"
@@ -168,13 +159,13 @@ const SignUp = () => {
 
           <View className="flex justify-center pt-5 flex-row gap-2">
             <Text className="text-lg text-gray-100 font-pregular">
-              Have an account already?
+              Don't have an account?
             </Text>
             <Link
-              href="/sign-in"
+              href="/sign-up"
               className="text-lg font-psemibold text-secondary"
             >
-              Sign in
+              Signup
             </Link>
           </View>
         </View>
@@ -183,4 +174,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;
