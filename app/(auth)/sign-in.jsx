@@ -11,8 +11,7 @@ import {  TextInput } from "react-native";
 
 import { icons } from "../../constants";
 import { ActivityIndicator, TouchableOpacity } from "react-native";
-
-import {createUser} from '../../lib/appwrite'
+// import {signIn} from '../../lib/appwrite'
 
 const CustomButton = ({
   title,
@@ -88,15 +87,34 @@ const FormField = ({
   );
 };
 
-const SignUp = () => {
+const SignIn = () => {
   const { setUser, setIsLoggedIn } = useGlobalContext();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
-    username: "",
     email: "",
     password: "",
   });
 
+  const submit = async () => {
+    if ( form.email === "" || form.password === "") {
+        Alert.alert("Error", "Please fill in all fields");
+      }
+  
+      setIsSubmitting(true);
+      try {
+        await signIn(form.email, form.password);
+        const result = await getCurrentUser();
+        setUser(result);
+        setIsLoggedIn(true);
+        
+        // ALert.alert("User signed in successfully");
+        router.replace("/home");
+      } catch (error) {
+        Alert.alert("Error", error.message);
+      } finally {
+        setIsSubmitting(false);
+      }
+  }
 //   const submit = async () => {
 //     if (form.email === "" || form.password === "") {
 //       Alert.alert("Error", "Please fill in all fields");
@@ -118,25 +136,6 @@ const SignUp = () => {
 //       setSubmitting(false);
 //     }
 //   };
-  const submit = async () => {
-    if (form.username === "" || form.email === "" || form.password === "") {
-        Alert.alert("Error", "Please fill in all fields");
-      }
-  
-      setIsSubmitting(true);
-      try {
-        const result = await createUser(form.email, form.password, form.username);
-        setUser(result);
-        setIsLoggedIn(true);
-  
-        router.replace("/home");
-      } catch (error) {
-        Alert.alert("Error", error.message);
-      } finally {
-        setIsSubmitting(false);
-      }
-  }
-
 
   return (
     <SafeAreaView className="bg-primary h-full">
@@ -154,16 +153,8 @@ const SignUp = () => {
           />
 
           <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
-            Sign up to MoodQuest
+            Log in to MoodQuest
           </Text>
-
-          <FormField
-            title="Username"
-            value={form.username}
-            handleChangeText={(e) => setForm({ ...form, username: e })}
-            otherStyles="mt-10"
-            // keyboardType="email-address"
-          />
 
           <FormField
             title="Email"
@@ -181,7 +172,7 @@ const SignUp = () => {
           />
 
           <CustomButton
-            title="Sign Up"
+            title="Sign In"
             handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}
@@ -189,13 +180,13 @@ const SignUp = () => {
 
           <View className="flex justify-center pt-5 flex-row gap-2">
             <Text className="text-lg text-gray-100 font-pregular">
-              Have an account already?
+              Don't have an account?
             </Text>
             <Link
-              href="/sign-in"
+              href="/sign-up"
               className="text-lg font-psemibold text-secondary"
             >
-              Sign in
+              Sign up
             </Link>
           </View>
         </View>
@@ -204,4 +195,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;
