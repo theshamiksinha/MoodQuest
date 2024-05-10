@@ -5,12 +5,13 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
 // import { CustomButton, FormField } from "../../components";
-// import { getCurrentUser, signIn } from "../../lib/appwrite";
-// import { useGlobalContext } from "../../context/GlobalProvider";
+import { getCurrentUser, signIn } from "../../lib/appwrite";
+import { useGlobalContext } from "../../context/GlobalProvider";
 import {  TextInput } from "react-native";
 
 import { icons } from "../../constants";
 import { ActivityIndicator, TouchableOpacity } from "react-native";
+// import {signIn} from '../../lib/appwrite'
 
 const CustomButton = ({
   title,
@@ -87,13 +88,33 @@ const FormField = ({
 };
 
 const SignIn = () => {
-//   const { setUser, setIsLogged } = useGlobalContext();
-  const [isSubmitting, setSubmitting] = useState(false);
+  const { setUser, setIsLoggedIn } = useGlobalContext();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
 
+  const submit = async () => {
+    if ( form.email === "" || form.password === "") {
+        Alert.alert("Error", "Please fill in all fields");
+      }
+  
+      setIsSubmitting(true);
+      try {
+        await signIn(form.email, form.password);
+        const result = await getCurrentUser();
+        setUser(result);
+        setIsLoggedIn(true);
+        
+        // ALert.alert("User signed in successfully");
+        router.replace("/home");
+      } catch (error) {
+        Alert.alert("Error", error.message);
+      } finally {
+        setIsSubmitting(false);
+      }
+  }
 //   const submit = async () => {
 //     if (form.email === "" || form.password === "") {
 //       Alert.alert("Error", "Please fill in all fields");
@@ -152,7 +173,7 @@ const SignIn = () => {
 
           <CustomButton
             title="Sign In"
-            handlePress={() => router.push("/games")}
+            handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}
           />
@@ -165,7 +186,7 @@ const SignIn = () => {
               href="/sign-up"
               className="text-lg font-psemibold text-secondary"
             >
-              Signup
+              Sign up
             </Link>
           </View>
         </View>

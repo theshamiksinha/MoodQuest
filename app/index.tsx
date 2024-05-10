@@ -6,6 +6,7 @@ import {Link, Redirect, router} from 'expo-router'
 import { SafeAreaView } from "react-native-safe-area-context";
 import {images } from "../constants";
 import { ActivityIndicator, TouchableOpacity } from "react-native";
+import { useGlobalContext } from '../context/GlobalProvider'
 // import { CustomButton } from "../components";
 const CustomButton = ({
   title,
@@ -40,6 +41,10 @@ const CustomButton = ({
 };
 
 export default function App(){
+  const {isLoading,isLoggedIn } = useGlobalContext
+  if(!isLoading && isLoggedIn){
+    return <Redirect href = "/home" />
+  }
   return(
     <SafeAreaView className="bg-primary h-full">
       {/* <Loader isLoading={loading} /> */}

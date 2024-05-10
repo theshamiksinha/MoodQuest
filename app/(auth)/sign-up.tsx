@@ -5,12 +5,14 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
 // import { CustomButton, FormField } from "../../components";
-// import { getCurrentUser, signIn } from "../../lib/appwrite";
-// import { useGlobalContext } from "../../context/GlobalProvider";
+import { getCurrentUser, signIn } from "../../lib/appwrite";
+import { useGlobalContext } from "../../context/GlobalProvider";
 import {  TextInput } from "react-native";
 
 import { icons } from "../../constants";
 import { ActivityIndicator, TouchableOpacity } from "react-native";
+
+import {createUser} from '../../lib/appwrite'
 
 const CustomButton = ({
   title,
@@ -87,8 +89,8 @@ const FormField = ({
 };
 
 const SignUp = () => {
-//   const { setUser, setIsLogged } = useGlobalContext();
-  const [isSubmitting, setSubmitting] = useState(false);
+  const { setUser, setIsLoggedIn } = useGlobalContext();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -116,6 +118,25 @@ const SignUp = () => {
 //       setSubmitting(false);
 //     }
 //   };
+  const submit = async () => {
+    if (form.username === "" || form.email === "" || form.password === "") {
+        Alert.alert("Error", "Please fill in all fields");
+      }
+  
+      setIsSubmitting(true);
+      try {
+        const result = await createUser(form.email, form.password, form.username);
+        setUser(result);
+        setIsLoggedIn(true);
+  
+        router.replace("/home");
+      } catch (error) {
+        Alert.alert("Error", error.message);
+      } finally {
+        setIsSubmitting(false);
+      }
+  }
+
 
   return (
     <SafeAreaView className="bg-primary h-full">
@@ -160,8 +181,8 @@ const SignUp = () => {
           />
 
           <CustomButton
-            title="Sign In"
-            handlePress={() => router.push("/games")}
+            title="Sign Up"
+            handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}
           />
