@@ -5,9 +5,11 @@ const GenerativeChat: React.FC = () => {
   const [message, setMessage] = useState('');
   const [chatHistory, setChatHistory] = useState<{ text: string; from: 'user' | 'bot' }[]>([]);
   const scrollViewRef = useRef<ScrollView>(null);
+  const [isSending, setIsSending] = useState(false); // State to indicate sending state
 
   const sendMessageToBackend = async () => {
     try {
+      setIsSending(true); // Set sending state to true
       const response = await fetch('http://192.168.43.6:3000/message', {
         method: 'POST',
         headers: {
@@ -23,6 +25,8 @@ const GenerativeChat: React.FC = () => {
       scrollToBottom();
     } catch (error) {
       console.error('Error sending message to backend:', error);
+    } finally {
+      setIsSending(false); // Reset sending state regardless of success or failure
     }
   };
 
@@ -37,7 +41,7 @@ const GenerativeChat: React.FC = () => {
       <ScrollView
         ref={scrollViewRef}
         contentContainerStyle={{ justifyContent: 'flex-end', flexGrow: 1 }}
-        style={{ flex: 1 }}
+        style={{ flex: 1, marginBottom: 10 }} // Add marginBottom to create a gap
       >
         {chatHistory.map((chat, index) => (
           <View key={index} style={[styles.messageContainer, chat.from === 'user' ? styles.userMessage : styles.botMessage]}>
@@ -47,12 +51,17 @@ const GenerativeChat: React.FC = () => {
       </ScrollView>
       <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: 10 }}>
         <TextInput
-          style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1, padding: 10 }}
+          style={styles.input}
           onChangeText={setMessage}
           value={message}
           placeholder="Type your message..."
         />
-        <Button title="Send" onPress={sendMessageToBackend} />
+        <Button 
+          title="Send" 
+          onPress={sendMessageToBackend} 
+          disabled={isSending} // Disable button while sending
+          color={isSending ? '#aaa' : '#007AFF'} // Change button color based on sending state
+        />
       </View>
     </View>
   );
@@ -61,7 +70,7 @@ const GenerativeChat: React.FC = () => {
 const styles = StyleSheet.create({
   messageContainer: {
     borderRadius: 8,
-    marginVertical: 4,
+    marginVertical: 10,
     paddingHorizontal: 12,
     paddingVertical: 8,
     maxWidth: '80%',
@@ -73,6 +82,17 @@ const styles = StyleSheet.create({
   botMessage: {
     alignSelf: 'flex-start',
     backgroundColor: '#E5E5EA',
+  },
+  input: {
+    flex: 1,
+    height: 40,
+    borderColor: 'gray', // border color
+    borderWidth: 1,
+    borderRadius: 20, // rounded corners
+    paddingHorizontal: 20, // horizontal padding
+    paddingVertical:3,
+    fontSize: 16, // font size
+    color: '#000', // text color
   },
 });
 
