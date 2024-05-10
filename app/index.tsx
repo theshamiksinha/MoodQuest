@@ -4,10 +4,47 @@ import React from 'react'
 import {Slot} from 'expo-router'
 import {Link, Redirect, router} from 'expo-router'
 import { SafeAreaView } from "react-native-safe-area-context";
-import {images, } from "../constants";
+import {images } from "../constants";
+import { ActivityIndicator, TouchableOpacity } from "react-native";
+import { useGlobalContext } from '../context/GlobalProvider'
 // import { CustomButton } from "../components";
+const CustomButton = ({
+  title,
+  handlePress,
+  containerStyles,
+  textStyles,
+  isLoading,
+}) => {
+  return (
+    <TouchableOpacity
+      onPress={handlePress}
+      activeOpacity={0.7}
+      className={`bg-secondary rounded-xl min-h-[62px] flex flex-row justify-center items-center ${containerStyles} ${
+        isLoading ? "opacity-50" : ""
+      }`}
+      disabled={isLoading}
+    >
+      <Text className={`text-primary font-psemibold text-lg ${textStyles}`}>
+        {title}
+      </Text>
+
+      {isLoading && (
+        <ActivityIndicator
+          animating={isLoading}
+          color="#fff"
+          size="small"
+          className="ml-2"
+        />
+      )}
+    </TouchableOpacity>
+  );
+};
 
 export default function App(){
+  const {isLoading,isLoggedIn } = useGlobalContext
+  if(!isLoading && isLoggedIn){
+    return <Redirect href = "/home" />
+  }
   return(
     <SafeAreaView className="bg-primary h-full">
       {/* <Loader isLoading={loading} /> */}
@@ -49,11 +86,11 @@ export default function App(){
             Exploration with Aora
           </Text>
 
-          {/* <CustomButton
+          <CustomButton
             title="Continue with Email"
             handlePress={() => router.push("/sign-in")}
             containerStyles="w-full mt-7"
-          /> */}
+          />
           <Link href = "/home"> Go to home</Link>
         </View>
       </ScrollView>
