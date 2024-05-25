@@ -1,0 +1,259 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage[normalem]{ulem}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{Competitive Analysis:}
+
+\textbf{1. YourDOST:}
+
+\href{https://yourdost.com/userDashboard\#/home}{\uline{YourDOST}} is an
+online mental health platform dedicated to providing accessible and
+convenient mental health support and resources to individuals seeking to
+improve their emotional well-being. With a user-friendly interface and a
+range of services tailored to meet diverse needs, YourDOST strives to
+empower users on their journey towards better mental health.\\
+\textbf{Product} \textbf{Features:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  A live CHAT or an appointment for an audio or video session with an
+  expert of the user\textquotesingle s choice.
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+\includegraphics[width=1.89474in,height=4.11321in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image9.png}
+
+The user can use the website or the mobile app to either book a session
+or start a chat with the online experts.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \begin{quote}
+  Connect with people in similar situations on discussion forums.\\
+  \strut \\
+  \includegraphics[width=1.69271in,height=3.64751in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image3.png}
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+The user can join various communities and connect, interact with people
+dealing with similar issues
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{quote}
+  Explore and learn from the wide collection of stories, graphics and
+  videos.\\
+  \includegraphics[width=1.69271in,height=3.66191in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image7.png}\includegraphics[width=1.65104in,height=3.55846in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image8.png}\\
+  The app offers multiple resources like stories, videos and blogs to
+  help users overcome their issues.
+  \end{quote}
+\item
+  \begin{quote}
+  Interactive Tests to evaluate user's mental health.\\
+  \strut \\
+  \includegraphics[width=1.68963in,height=3.66255in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image10.png}\includegraphics[width=1.82502in,height=3.95421in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image5.png}
+  \end{quote}
+\end{enumerate}
+
+\textbf{Product Comparison:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  \textbf{Gamification Interaction:} The YourDOST app is only integrated
+  with a few interactive features like tests and therapy sessions.Our
+  app is bundled with various features-\\
+  - Daily Challenges: Daily challenges or quests related to mental
+  health goals such as practicing mindfulness, journaling, or engaging
+  in physical activity.\\
+  - Progress Tracking: Visual progress tracking features that allow
+  users to monitor their mental health goals over time.\\
+  - Interactive Stories: Stories or scenarios within the app that
+  simulate real-life situations related to mental health challenges.
+  Users can make choices and navigate through the story, with outcomes
+  influenced by their decisions.\\
+  - Avatar Customization: Users can create and customize their own
+  avatars within the app. Users can earn virtual currency or items by
+  completing tasks or reaching milestones, which they can use to
+  personalize their avatars. This adds a fun and interactive element to
+  the app experience.\\
+  - Mindfulness Mini-Games: Mini-games or activities focused on
+  promoting mindfulness and relaxation techniques such as deep
+  breathing, guided meditation, or progressive muscle relaxation. These
+  mini-games can serve as quick stress-relief tools that users can
+  access whenever they need a break.
+  \end{quote}
+\item
+  \begin{quote}
+  \textbf{Therapy Services:} Both the apps provide offline and online
+  therapy sessions with experts with a personal chat or a video call.
+  \end{quote}
+\item
+  \begin{quote}
+  \textbf{Pricing Strategy:} Both the apps are completely free to use
+  for their online services, and are paid for the offline therapy
+  sessions.
+  \end{quote}
+\end{itemize}
+
+\textbf{2. Wysa}
+
+\href{https://www.wysa.com/}{\uline{Wysa}} is an AI-powered mental
+health app designed to provide users with emotional support, self-help
+tools, and therapeutic techniques to improve their well-being. With a
+variety of tools and techniques rooted in evidence-based therapy, Wysa
+provides personalized support to help the user build resilience, manage
+emotions, and live a happier, healthier life.
+
+\textbf{Product Features:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Emotional Support: Chat feature with AI Wysa anytime, anywhere, and
+  receive empathetic responses and evidence-based techniques to help the
+  user navigate life\textquotesingle s challenges.\\
+  \includegraphics[width=1.68057in,height=3.62746in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image2.png}
+  \end{quote}
+\item
+  \begin{quote}
+  Therapy Sessions with experts: The user can book online therapy
+  sessions with highly qualified experts for more personalized
+  experience.\\
+  \includegraphics[width=1.72793in,height=3.74841in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image1.png}
+  \end{quote}
+\item
+  \begin{quote}
+  Self-Help Tools: a wide range of self-help exercises and activities,
+  including mindfulness meditation, breathing exercises, journaling
+  prompts, and mood tracking tools.\\
+  \includegraphics[width=1.66663in,height=3.60663in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image4.png}
+  \end{quote}
+\item
+  \begin{quote}
+  Cognitive Behavioral Therapy (CBT): CBT-based exercises and techniques
+  to challenge negative thought patterns, reframe unhelpful beliefs, and
+  build healthier coping strategies.\\
+  \includegraphics[width=1.7002in,height=3.67955in]{vertopal_25c0ff455f73469eb1b6e3e4452807f6/media/image6.png}
+  \end{quote}
+\end{enumerate}
+
+\textbf{Product Comparison:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  \textbf{Gamification Interaction:} The Wysa app has a lot of
+  interactive features like the AI chatbot but lacks gamified elements
+  that our app provides-\\
+  - Daily Challenges: Daily challenges or quests related to mental
+  health goals such as practicing mindfulness, journaling, or engaging
+  in physical activity.\\
+  - Progress Tracking: Visual progress tracking features that allow
+  users to monitor their mental health goals over time.\\
+  - Interactive Stories: Stories or scenarios within the app that
+  simulate real-life situations related to mental health challenges.
+  Users can make choices and navigate through the story, with outcomes
+  influenced by their decisions.\\
+  - Avatar Customization: Users can create and customize their own
+  avatars within the app. Users can earn virtual currency or items by
+  completing tasks or reaching milestones, which they can use to
+  personalize their avatars. This adds a fun and interactive element to
+  the app experience.\\
+  - Mindfulness Mini-Games: Mini-games or activities focused on
+  promoting mindfulness and relaxation techniques such as deep
+  breathing, guided meditation, or progressive muscle relaxation. These
+  mini-games can serve as quick stress-relief tools that users can
+  access whenever they need a break.
+  \end{quote}
+\item
+  \begin{quote}
+  \textbf{Therapy Sessions:} The Wysa app only provides online therapy
+  sessions with chat/video/text sessions. Our app provides both online
+  and offline services
+  \end{quote}
+\item
+  \begin{quote}
+  \textbf{Pricing Strategy:} A lot of features of the Wysa app like
+  therapy sessions and half of the Self-Help tools are behind a paywall,
+  with pricing starting at 10\$ a week. Our app provides all the online
+  features free of cost.
+  \end{quote}
+\end{itemize}
+
+\end{document}
