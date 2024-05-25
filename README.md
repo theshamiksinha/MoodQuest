@@ -1,50 +1,105 @@
-# Welcome to your Expo app 👋
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+\begin{document}
 
-## Get started
+\title{MoodQuest}
+\author{}
+\date{}
+\maketitle
 
-1. Install dependencies
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{link-to-your-logo-image}
+\end{figure}
 
-   ```bash
+\tableofcontents
+\newpage
+
+\section{Project Overview}
+MoodQuest is an interactive mobile application designed to help users manage their mental health through gamification. The app allows users to track their moods, engage in daily quests, and build healthy habits over time. MoodQuest was developed as a project for the DES519: Design of Interactive Systems course at [Your University].
+
+\section{Features}
+\begin{itemize}
+    \item \textbf{Mood Tracking:} Easily log your daily mood and keep track of your emotional patterns.
+    \item \textbf{Daily Quests:} Engage in various tasks that promote mental well-being, such as mindfulness exercises, physical activities, and social interactions.
+    \item \textbf{Progress Tracking:} Monitor your progress over time with visual representations and statistics.
+    \item \textbf{Journaling:} Keep a personal journal to reflect on your thoughts and experiences.
+\end{itemize}
+
+\section{Installation}
+\begin{verbatim}
+1. Clone the repository:
+   git clone https://github.com/yourusername/MoodQuest.git
+
+2. Navigate to the project directory:
+   cd MoodQuest
+
+3. Install dependencies:
    npm install
-   ```
 
-2. Start the app
+4. Run the app:
+   npm start
+\end{verbatim}
 
-   ```bash
-    npx expo start
-   ```
+\section{Usage}
+\begin{enumerate}
+    \item \textbf{Sign Up / Log In:} Create a new account or log in with your existing credentials.
+    \item \textbf{Track Your Mood:} Use the mood tracker to log your daily emotional state.
+    \item \textbf{Complete Quests:} Participate in daily quests to improve your mental health.
+    \item \textbf{View Progress:} Check your progress over time through the app's analytics and visualizations.
+\end{enumerate}
 
-In the output, you'll find options to open the app in a
+\section{Screenshots}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{link-to-screenshot-1}
+\caption{Screenshot 1}
+\end{figure}
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{link-to-screenshot-2}
+\caption{Screenshot 2}
+\end{figure}
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{link-to-screenshot-3}
+\caption{Screenshot 3}
+\end{figure}
 
-## Get a fresh project
+\section{Course Information}
+\begin{itemize}
+    \item \textbf{Course Code:} DES519
+    \item \textbf{Course Name:} Design of Interactive Systems
+    \item \textbf{Credits:} 4
+    \item \textbf{Course Description:}
+    
+    The objective of this course is to learn all the aspects of design and development of interactive systems, which are now an important part of our lives. The design and usability of these systems leave an effect on the quality of people’s relationship to technology. Web applications, social media applications, multimedia applications, embedded devices, etc., are all a part of this system, which has become an integral part of our lives. By the end of the course, the students will be familiar with the goals, problems, and structure of the interactive system design process. Moreover, the students will be exposed to the core techniques for task analysis and user analysis. Furthermore, students will be able to understand the innovative features of interactive systems and be able to improve existing interfaces by considering these features.
+\end{itemize}
 
-When you're ready, run:
+\section{Contributing}
+We welcome contributions from the community! To contribute:
+\begin{enumerate}
+    \item Fork the repository.
+    \item Create a new branch (\texttt{git checkout -b feature-branch}).
+    \item Make your changes.
+    \item Commit your changes (\texttt{git commit -m 'Add some feature'}).
+    \item Push to the branch (\texttt{git push origin feature-branch}).
+    \item Create a new Pull Request.
+\end{enumerate}
 
-```bash
-npm run reset-project
-```
+\section{License}
+This project is licensed under the MIT License. See the \href{LICENSE}{LICENSE} file for more details.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+\section{Contact}
+For any questions or feedback, please reach out to:
+\begin{itemize}
+    \item \textbf{Name:} Your Name
+    \item \textbf{Email:} \href{mailto:your.email@example.com}{your.email@example.com}
+    \item \textbf{GitHub:} \href{https://github.com/yourusername}{yourusername}
+\end{itemize}
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+\end{document}
