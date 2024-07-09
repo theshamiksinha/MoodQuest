@@ -1,6 +1,9 @@
+
 <div style="display: flex; align-items: center;">
-  <img src="./pics/title.jpeg" alt="MoodQuest Title" style="width: 50%;">
-  <img src="./pics/logo.jpeg" alt="MoodQuest Logo" style="width: 50%;">
+  <img src="./pics/logo.jpeg" alt="StickHero Logo" height="125" style="margin-right: 20px;">
+  <span style="font-size: 48px; font-weight: bold;">.   .   .</span>
+  <img src="./pics/title.jpeg" alt="Title Logo" height="125" style="margin-left: 20px;">
+  <span style="font-size: 48px; font-weight: bold;">.   .   .</span>
 </div>
 
 # MoodQuest: A Gamified Mental Health App
