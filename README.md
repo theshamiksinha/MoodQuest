@@ -22,15 +22,17 @@ Our development process involved several key stages, from ideation to final impl
 | #### Ideation and Planning | #### Design and Prototyping |
 | <img src="./pics/1.png" alt="Ideation" width="400"> | <img src="./pics/2.png" alt="Design" width="400"> |
 
-| | |
-| --- | --- |
-| #### Development | #### Testing |
-| <img src="./pics/3.png" alt="Development" width="400"> | <img src="./pics/5.png" alt="Testing" width="400"> |
+| |
+| --- |
+| #### Development |
+| <img src="./pics/3.png" alt="Development" width="400"> |
+| <img src="./pics/5.png" alt="Deployment" width="400"> |
 
 | |
 | --- |
-| #### Deployment |
-| <img src="./pics/4.png" alt="Deployment" width="400"> |
+| #### Testing |
+| <img src="./pics/4.png" alt="Testing" width="400"> |
+
 
 
 
