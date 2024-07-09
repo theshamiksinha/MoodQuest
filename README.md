@@ -17,19 +17,19 @@ MoodQuest is a mobile application designed to help users improve their mental we
 Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
 #### Ideation and Planning
-![Ideation](./pics/pic1.png)
+![Ideation](./pics/1.png)
 
 #### Design and Prototyping
-![Design](./pics/pic2.png)
+![Design](./pics/2.png)
 
 #### Development
-![Development](./pics/pic3.png)
+![Development](./pics/3.png)
 
 #### Testing
-![Testing](./pics/pic4.png)
+![Testing](./pics/4.png)
 
 #### Deployment
-![Deployment](./pics/pic5.png)
+![Deployment](./pics/5.png)
 
 
 ### App Screenshots
