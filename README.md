@@ -1,4 +1,4 @@
-# ![MoodQuest Title](./pics/title.png)
+# ![MoodQuest Title](./pics/title.jpeg)
 
 ![MoodQuest Logo](./pics/logo.png)
 
