@@ -70,6 +70,35 @@ To install and run MoodQuest on your local machine, follow these steps:
    ```bash
    git clone https://github.com/theshamiksinha/MoodQuest.git
 
+   MoodQuest: Installation, Configuration, and Access
+Markdown
+# Prerequisites
+
+* Node.js and npm (or yarn) installed on your system.
+* A MySQL database server installed and running.
+* Expo Go app installed on your iOS or Android device (for mobile access).
+
+# Installation and Setup
+
+1. **Install Dependencies:**
+bash
+npm install
+
+2. Run Backend Server:
+bash
+Copy code
+npm start
+
+3. Deploy Mobile App using Expo Go:
+
+Download and install the Expo Go app on your mobile device.
+
+Start the Expo development server:
+
+bash
+Copy code
+npm run start
+Scan the QR code displayed in the terminal using the Expo Go app to launch MoodQuest on your mobile device.
 
 
 
