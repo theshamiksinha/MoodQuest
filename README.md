@@ -63,47 +63,6 @@ Take a look at some screenshots of the MoodQuest app in action:
 
 ---
 
-## Installation
-To install and run MoodQuest on your local machine, follow these steps:
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/theshamiksinha/MoodQuest.git
-
-   MoodQuest: Installation, Configuration, and Access
-Markdown
-# Prerequisites
-
-* Node.js and npm (or yarn) installed on your system.
-* A MySQL database server installed and running.
-* Expo Go app installed on your iOS or Android device (for mobile access).
-
-# Installation and Setup
-
-1. **Install Dependencies:**
-bash
-npm install
-
-2. Run Backend Server:
-bash
-Copy code
-npm start
-
-3. Deploy Mobile App using Expo Go:
-
-Download and install the Expo Go app on your mobile device.
-
-Start the Expo development server:
-
-bash
-Copy code
-npm run start
-Scan the QR code displayed in the terminal using the Expo Go app to launch MoodQuest on your mobile device.
-
-
-
-
-
 ## Tech Stack
 
 MoodQuest utilizes a modern tech stack to ensure robust performance and scalability. Here are the key technologies and frameworks employed in the development:
@@ -131,4 +90,11 @@ MoodQuest utilizes a modern tech stack to ensure robust performance and scalabil
   - **Vertx AI Gemini**: For developing and integrating AI chatbot functionalities.
 
 This tech stack was chosen to ensure a seamless user experience, efficient data management, and the integration of advanced AI capabilities to enhance the app's functionality.
+
+
+
+## Conclusion
+
+Thank you for exploring MoodQuest! For any questions or assistance, please feel free to reach out.
+
 
