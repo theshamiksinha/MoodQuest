@@ -17,20 +17,27 @@ MoodQuest is a mobile application designed to help users improve their mental we
 ### Development Process
 Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
-#### Ideation and Planning
-<img src="./pics/1.png" alt="Ideation" width="400">
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex-basis: 50%; padding: 10px;">
+    #### Ideation and Planning
+    <img src="./pics/1.png" alt="Ideation" width="100%">
+    
+    #### Design and Prototyping
+    <img src="./pics/2.png" alt="Design" width="100%">
+    
+    #### Development
+    <img src="./pics/3.png" alt="Development" width="100%">
+  </div>
+  
+  <div style="flex-basis: 50%; padding: 10px;">
+    #### Testing
+    <img src="./pics/4.png" alt="Testing" width="100%">
+    
+    #### Deployment
+    <img src="./pics/5.png" alt="Deployment" width="100%">
+  </div>
+</div>
 
-#### Design and Prototyping
-<img src="./pics/2.png" alt="Design" width="400">
-
-#### Development
-<img src="./pics/3.png" alt="Development" width="400">
-
-#### Testing
-<img src="./pics/4.png" alt="Testing" width="400">
-
-#### Deployment
-<img src="./pics/5.png" alt="Deployment" width="400">
 
 
 
