@@ -6,9 +6,9 @@ import { icons } from "../../constants";
 // import useAppwrite from "../../lib/useAppwrite";
 import {  signOut } from "../../lib/appwrite";
 import { useGlobalContext } from "../../context/GlobalProvider";
-import image1 from '@/components/badge1.png';
-import image2 from '@/components/badge2.png';
-import image3 from '@/components/badge3.png';
+// import image1 from '@/components/badge1.png';
+// import image2 from '@/components/badge2.png';
+// import image3 from '@/components/badge3.png';
 // import { EmptyState,  } from "../../components";
 const InfoBox = ({ title, subtitle, containerStyles, titleStyles }) => {
     return (

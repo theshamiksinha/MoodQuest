@@ -159,7 +159,7 @@ const SignIn = () => {
           <FormField
             title="Email"
             value={form.email}
-            handleChangeText={(e) => setForm({ ...form, email: e })}
+            handleChangeText={(e) => setForm({ ...form, mail: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
           />

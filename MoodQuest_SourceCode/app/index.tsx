@@ -5,10 +5,20 @@ import {Slot} from 'expo-router'
 import {Link, Redirect, router} from 'expo-router'
 import { SafeAreaView } from "react-native-safe-area-context";
 import {images } from "../constants";
-import { ActivityIndicator, TouchableOpacity } from "react-native";
+import { TouchableOpacity, StyleSheet, ActivityIndicator, ViewStyle, TextStyle } from "react-native";
 import { useGlobalContext } from '../context/GlobalProvider'
 // import { CustomButton } from "../components";
-const CustomButton = ({
+
+
+type CustomButtonProps = {
+  title: string;
+  handlePress: () => void;
+  containerStyles?: ViewStyle;
+  textStyles?: TextStyle;
+  isLoading?: boolean;
+};
+
+const CustomButton: React.FC<CustomButtonProps> = ({
   title,
   handlePress,
   containerStyles,

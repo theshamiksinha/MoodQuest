@@ -2,7 +2,7 @@ import { View, Text, FlatList, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from "react-native-safe-area-context";
 import {images} from '../../constants'
-import { useGlobalContext } from "../../context/GlobalProvider";
+import { useGlobalContext } from "../../context/GlobalProvider"; 
 const HOME = () => {
   const { user, setUser, setIsLoggedIn } = useGlobalContext();
   return (
@@ -10,7 +10,7 @@ const HOME = () => {
     <SafeAreaView className="bg-primary">
       <FlatList
         data = {[{id:1}]}
-        keyExtractor={(item)=> item.id}
+        keyExtractor={(item)=> (item.id).toString()}
         renderItem={({item}) => (
           <Text>{item.id}</Text>
         )}
