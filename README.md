@@ -39,9 +39,9 @@ Take a look at some screenshots of the MoodQuest app in action:
 |---------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Onboarding page of MoodQuest*                                | *Login Page*                                                   | *Sign Up page*                                                 |
 
-| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/26.jpeg" alt="App Screenshot 12" width="200"> |
+| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/20.jpeg" alt="App Screenshot 10" width="200">width="200"> |
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
-| *Home page*                                                    | *Read blogs and articles*                                      | *Daily Checkpoints for tasks*                                  |
+| *Home page*                                                    | *Read blogs and articles*                                      | *AI chatBot using Gemini*                                     |
 
 | <img src="./pics/27.jpeg" alt="App Screenshot 5" width="200"> | <img src="./pics/25.jpeg" alt="App Screenshot 7" width="200"> | <img src="./pics/11.jpeg" alt="App Screenshot 13" width="200"> |
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,9 +55,6 @@ Take a look at some screenshots of the MoodQuest app in action:
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Different Activities*                                        | *Different Activities*                                        | *Explore Tasks*                                                |
 
-| <img src="./pics/20.jpeg" alt="App Screenshot 10" width="200"> |
-|----------------------------------------------------------------|
-| *AI chatbot using Gemini*                                      |
 
 
 ### Installation
