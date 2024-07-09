@@ -1,6 +1,7 @@
-# ![MoodQuest Title](./pics/title.jpeg)
-
-![MoodQuest Logo](./pics/logo.jpeg)
+<div style="display: flex; align-items: center;">
+  <img src="./pics/title.jpeg" alt="MoodQuest Title" style="width: 50%;">
+  <img src="./pics/logo.jpeg" alt="MoodQuest Logo" style="width: 50%;">
+</div>
 
 ## MoodQuest: A Gamified Mental Health App
 
@@ -17,19 +18,20 @@ MoodQuest is a mobile application designed to help users improve their mental we
 Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
 #### Ideation and Planning
-![Ideation](./pics/1.png)
+<img src="./pics/1.png" alt="Ideation" width="400">
 
 #### Design and Prototyping
-![Design](./pics/2.png)
+<img src="./pics/2.png" alt="Design" width="400">
 
 #### Development
-![Development](./pics/3.png)
+<img src="./pics/3.png" alt="Development" width="400">
 
 #### Testing
-![Testing](./pics/4.png)
+<img src="./pics/4.png" alt="Testing" width="400">
 
 #### Deployment
-![Deployment](./pics/5.png)
+<img src="./pics/5.png" alt="Deployment" width="400">
+
 
 
 ### App Screenshots
@@ -39,7 +41,7 @@ Take a look at some screenshots of the MoodQuest app in action:
 |---------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Onboarding page of MoodQuest*                                | *Login Page*                                                   | *Sign Up page*                                                 |
 
-| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/20.jpeg" alt="App Screenshot 10" width="200">width="200"> |
+| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/20.jpeg" alt="App Screenshot 10"width="200" |
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Home page*                                                    | *Read blogs and articles*                                      | *AI chatBot using Gemini*                                     |
 
