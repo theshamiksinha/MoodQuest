@@ -1,37 +1,52 @@
-# MoodQuest
+# ![MoodQuest Title](./pics/title.png)
 
-![MoodQuest Logo](link-to-your-logo-image)
+![MoodQuest Logo](./pics/logo.png)
 
-## Table of Contents
+## MoodQuest: A Gamified Mental Health App
 
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Screenshots](#screenshots)
-6. [Course Information](#course-information)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
+### Overview
+MoodQuest is a mobile application designed to help users improve their mental well-being through gamification. Our aim is to increase user retention by making mental health management engaging and enjoyable.
 
-## Project Overview
+### Features
+- **Mood Tracking**: Log your daily moods and activities.
+- **Quests and Challenges**: Participate in quests that promote positive mental health habits.
+- **Progress Visualization**: View your progress and mood trends over time.
+- **Community Support**: Connect with others on similar quests.
 
-MoodQuest is an interactive mobile application designed to help users manage their mental health through gamification. The app allows users to track their moods, engage in daily quests, and build healthy habits over time. MoodQuest was developed as a project for the DES519: Design of Interactive Systems course at [Your University].
+### Development Process
+Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
-## Features
+#### Ideation and Planning
+![Ideation](./pics/pic1.png)
 
-- **Mood Tracking:** Easily log your daily mood and keep track of your emotional patterns.
-- **Daily Quests:** Engage in various tasks that promote mental well-being, such as mindfulness exercises, physical activities, and social interactions.
-- **Progress Tracking:** Monitor your progress over time with visual representations and statistics.
-- **Journaling:** Keep a personal journal to reflect on your thoughts and experiences.
+#### Design and Prototyping
+![Design](./pics/pic2.png)
 
-## Installation
+#### Development
+![Development](./pics/pic3.png)
 
-Navigate to the project directory:
+#### Testing
+![Testing](./pics/pic4.png)
 
-```bash
-cd MoodQuest
-Install dependencies:
+#### Deployment
+![Deployment](./pics/pic5.png)
 
-```bash
-npm install
+### App Screenshots
+Take a look at some screenshots of the MoodQuest app in action:
+
+![App Screenshot 1](./pics/pic6.png)
+![App Screenshot 2](./pics/pic7.png)
+![App Screenshot 3](./pics/pic8.png)
+![App Screenshot 4](./pics/pic9.png)
+![App Screenshot 5](./pics/pic10.png)
+![App Screenshot 6](./pics/pic11.png)
+![App Screenshot 7](./pics/pic12.png)
+![App Screenshot 8](./pics/pic13.png)
+![App Screenshot 9](./pics/pic14.png)
+
+### Installation
+To install and run MoodQuest on your local machine, follow these steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/theshamiksinha/MoodQuest.git
