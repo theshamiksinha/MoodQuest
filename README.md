@@ -41,7 +41,7 @@ Take a look at some screenshots of the MoodQuest app in action:
 |---------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Onboarding page of MoodQuest*                                | *Login Page*                                                   | *Sign Up page*                                                 |
 
-| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/20.jpeg" alt="App Screenshot 10"width="200"> |
+| <img src="./pics/28.jpeg" alt="App Screenshot 4" width="200"> | <img src="./pics/10.jpeg" alt="App Screenshot 11" width="200"> | <img src="./pics/20.jpeg" alt="App Screenshot 10" width="200"> |
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | *Home page*                                                    | *Read blogs and articles*                                      | *AI chatBot using Gemini*                                     |
 
