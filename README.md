@@ -25,8 +25,7 @@ Our development process involved several key stages, from ideation to final impl
 | | |
 | --- |  --- |  
 | #### Development | #### Testing |
-| <img src="./pics/3.png" alt="Development" width="400"> | <img src="./pics/5.png" alt="Testing" width="400"> |
-| <img src="./pics/4.png" alt="Deployment" width="400"> |
+| <img src="./pics/34.png" alt="Development" width="400"> | <img src="./pics/5.png" alt="Testing" width="400"> |
 
  
 
