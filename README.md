@@ -75,15 +75,13 @@ MoodQuest utilizes a modern tech stack to ensure robust performance and scalabil
 - **Backend**:
   - **Node.js**: For server-side scripting and handling backend logic.
   - **Express.js**: As the web application framework for Node.js.
-  - **MySQL**: For the relational database management system, storing user data and application information.
-
+    
 - **AI and Machine Learning**:
   - **Google Cloud Vertex AI**: For implementing AI-driven features like the chatbot using Gemini models.
 
 - **Deployment and Version Control**:
   - **Expo Go**: For deploying the mobile application to iOS and Android devices during development and testing phases.
   - **GitHub**: For version control and collaboration among team members.
-  - **PythonAnywhere**: For hosting and deploying the backend server and MySQL database.
 
 - **Other Tools and Technologies**:
   - **Adobe Illustrator**: For designing UI elements and graphics.
