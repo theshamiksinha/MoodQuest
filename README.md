@@ -6,7 +6,7 @@
   <span style="font-size: 48px; font-weight: bold;">.   .   .</span>
 </div>
 
-# MoodQuest: A Gamified Mental Health App
+# MoodQuest: A Gamified Mental Health App 🦊
 
 ---
 
