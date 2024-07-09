@@ -17,32 +17,32 @@ MoodQuest is a mobile application designed to help users improve their mental we
 Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
 #### Ideation and Planning
-![Ideation](./pics/pic1.jpeg)
+![Ideation](./pics/1.jpeg)
 
 #### Design and Prototyping
-![Design](./pics/pic2.jpeg)
+![Design](./pics/2.jpeg)
 
 #### Development
-![Development](./pics/pic3.jpeg)
+![Development](./pics/3.jpeg)
 
 #### Testing
-![Testing](./pics/pic4.jpeg)
+![Testing](./pics/4.jpeg)
 
 #### Deployment
-![Deployment](./pics/pic5.jpeg)
+![Deployment](./pics/5.jpeg)
 
 ### App Screenshots
 Take a look at some screenshots of the MoodQuest app in action:
 
-![App Screenshot 1](./pics/pic6.jpeg)
-![App Screenshot 2](./pics/pic7.jpeg)
-![App Screenshot 3](./pics/pic8.jpeg)
-![App Screenshot 4](./pics/pic9.jpeg)
-![App Screenshot 5](./pics/pic10.jpeg)
-![App Screenshot 6](./pics/pic11.jpeg)
-![App Screenshot 7](./pics/pic12.jpeg)
-![App Screenshot 8](./pics/pic13.jpeg)
-![App Screenshot 9](./pics/pic14.jpeg)
+![App Screenshot 1](./pics/6.jpeg)
+![App Screenshot 2](./pics/7.jpeg)
+![App Screenshot 3](./pics/8.jpeg)
+![App Screenshot 4](./pics/9.jpeg)
+![App Screenshot 5](./pics/10.jpeg)
+![App Screenshot 6](./pics/11.jpeg)
+![App Screenshot 7](./pics/12.jpeg)
+![App Screenshot 8](./pics/13.jpeg)
+![App Screenshot 9](./pics/14.jpeg)
 
 ### Installation
 To install and run MoodQuest on your local machine, follow these steps:
