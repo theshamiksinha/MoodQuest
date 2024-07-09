@@ -1,6 +1,6 @@
 # ![MoodQuest Title](./pics/title.jpeg)
 
-![MoodQuest Logo](./pics/logo.png)
+![MoodQuest Logo](./pics/logo.jpeg)
 
 ## MoodQuest: A Gamified Mental Health App
 
@@ -17,32 +17,32 @@ MoodQuest is a mobile application designed to help users improve their mental we
 Our development process involved several key stages, from ideation to final implementation. Here are some highlights:
 
 #### Ideation and Planning
-![Ideation](./pics/pic1.png)
+![Ideation](./pics/pic1.jpeg)
 
 #### Design and Prototyping
-![Design](./pics/pic2.png)
+![Design](./pics/pic2.jpeg)
 
 #### Development
-![Development](./pics/pic3.png)
+![Development](./pics/pic3.jpeg)
 
 #### Testing
-![Testing](./pics/pic4.png)
+![Testing](./pics/pic4.jpeg)
 
 #### Deployment
-![Deployment](./pics/pic5.png)
+![Deployment](./pics/pic5.jpeg)
 
 ### App Screenshots
 Take a look at some screenshots of the MoodQuest app in action:
 
-![App Screenshot 1](./pics/pic6.png)
-![App Screenshot 2](./pics/pic7.png)
-![App Screenshot 3](./pics/pic8.png)
-![App Screenshot 4](./pics/pic9.png)
-![App Screenshot 5](./pics/pic10.png)
-![App Screenshot 6](./pics/pic11.png)
-![App Screenshot 7](./pics/pic12.png)
-![App Screenshot 8](./pics/pic13.png)
-![App Screenshot 9](./pics/pic14.png)
+![App Screenshot 1](./pics/pic6.jpeg)
+![App Screenshot 2](./pics/pic7.jpeg)
+![App Screenshot 3](./pics/pic8.jpeg)
+![App Screenshot 4](./pics/pic9.jpeg)
+![App Screenshot 5](./pics/pic10.jpeg)
+![App Screenshot 6](./pics/pic11.jpeg)
+![App Screenshot 7](./pics/pic12.jpeg)
+![App Screenshot 8](./pics/pic13.jpeg)
+![App Screenshot 9](./pics/pic14.jpeg)
 
 ### Installation
 To install and run MoodQuest on your local machine, follow these steps:
