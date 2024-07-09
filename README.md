@@ -35,25 +35,25 @@ Our development process involved several key stages, from ideation to final impl
 ### App Screenshots
 Take a look at some screenshots of the MoodQuest app in action:
 
-| ![App Screenshot 1](./pics/6.jpeg) | ![App Screenshot 2](./pics/7.jpeg) |
-|------------------------------------|------------------------------------|
-| *Landing page of MoodQuest*        | *Landing page and footer*          |
+| <img src="./pics/6.jpeg" alt="App Screenshot 1" width="200"> | <img src="./pics/7.jpeg" alt="App Screenshot 2" width="200"> |
+|---------------------------------------------------------------|----------------------------------------------------------------|
+| *Landing page of MoodQuest*                                     | *Landing page and footer*                                     |
 
-| ![App Screenshot 3](./pics/8.jpeg) | ![App Screenshot 4](./pics/9.jpeg) |
-|------------------------------------|------------------------------------|
-| *Login as Admin or Customer*       | *Customer login interface*         |
+| <img src="./pics/8.jpeg" alt="App Screenshot 3" width="200"> | <img src="./pics/9.jpeg" alt="App Screenshot 4" width="200"> |
+|---------------------------------------------------------------|----------------------------------------------------------------|
+| *Login as Admin or Customer*                                     | *Customer login interface*                                     |
 
-| ![App Screenshot 5](./pics/10.jpeg) | ![App Screenshot 6](./pics/11.jpeg) |
-|-------------------------------------|-------------------------------------|
-| *Mood tracking interface*           | *Scrollable interface*              |
+| <img src="./pics/10.jpeg" alt="App Screenshot 5" width="200"> | <img src="./pics/11.jpeg" alt="App Screenshot 6" width="200"> |
+|----------------------------------------------------------------|----------------------------------------------------------------|
+| *Mood tracking interface*                                       | *Scrollable interface*                                         |
 
-| ![App Screenshot 7](./pics/12.jpeg) | ![App Screenshot 8](./pics/13.jpeg) |
-|-------------------------------------|-------------------------------------|
-| *Quest details*                     | *Adding quests to your list*        |
+| <img src="./pics/12.jpeg" alt="App Screenshot 7" width="200"> | <img src="./pics/13.jpeg" alt="App Screenshot 8" width="200"> |
+|----------------------------------------------------------------|----------------------------------------------------------------|
+| *Quest details*                                                 | *Adding quests to your list*                                   |
 
-| ![App Screenshot 9](./pics/14.jpeg) |                                    |
-|-------------------------------------|------------------------------------|
-| *View your progress and trends*     |                                    |
+| <img src="./pics/14.jpeg" alt="App Screenshot 9" width="200"> |                                                                |
+|----------------------------------------------------------------|----------------------------------------------------------------|
+| *View your progress and trends*                                 |  
 
 ### Installation
 To install and run MoodQuest on your local machine, follow these steps:
